@@ -2,103 +2,137 @@
 <html>
     <head>
         <title>My first (not really) frontend project</title>
-        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/reset.css">
+        <link rel="stylesheet" href="static/fonts/fonts.css">
+        <link rel="stylesheet" href="styles/index.css">
     </head>
     <body>
         <div class="page-wrapper">
             <header class="header">
                 <h1
-                    class="heading heading__h1"
+                    class="heading heading_hierarchy_1"
                 >
-                    Моя личная страница
+                    ILYA MATVEYENKO
                 </h1>
             </header>
-            <hr>
-            <main>
+            <main class="main">
+                <!-- Секция "Обо мне" -->
                 <section class="about">
-                    <h2
-                        class="heading heading__h2"
-                    >
-                        Обо мне
-                    </h2>
-                    <img
-                        class="image"
-                        src="static/photo_vtb.png"
-                        alt="Ilya Matveenko's photo portrait"
-                    >
-                    <p class="text">
-                        Привет, меня зовут Илья Матвеенко. Я студент 4 курса на треке "Разработка мобильных и веб-приложений". Возможно, некоторые преподаватели меня уже помнят, так как в ITAM Frontend Courses я участвую уже в третий раз.  
-                    </p>
-                    <p class="text">
-                        Почему я же снова здесь? Что ж, к хакатону я начал изучать совсем новую для себя библиотеку - React, и решил, что новая итерация курсов по фронтенд-разработке хорошо поддержит меня в освоении этой технологии.
-                    </p>
+                    <div class="header-container">
+                        <h2
+                            class="heading heading_hierarchy_2"
+                        >
+                            Обо мне
+                        </h2>
+                    </div>
+                    <div class="content-container">
+                        <img
+                            class="content-container_image"
+                            src="static/images/photo_vtb.png"
+                            alt="Ilya Matveenko's photo portrait"
+                        >
+                        <div
+                            class="text-container"
+                        >
+                            <p class="text">
+                                Привет, меня зовут Илья Матвеенко. Я студент 4 курса на треке "Разработка мобильных и веб-приложений". Возможно, некоторые преподаватели меня уже помнят, так как в ITAM Frontend Courses я участвую уже в третий раз.  
+                            </p>
+                            <p class="text">
+                                Почему же я снова здесь? Что ж, к хакатону я начал изучать совсем новую для себя библиотеку - React, и решил, что новая итерация курсов по фронтенд-разработке хорошо поддержит меня в освоении этой технологии.
+                            </p>
+                        </div>
+                    </div>
                 </section>
-                <section class="stack">
-                    <h2
-                        class="heading heading__h2"
-                    >
-                        Мой стек
-                    </h2>
-                    <ul class="list list_skills">
-                        <li class="list_item">
-                            HTML
-                        </li>
-                        <li class="list_item">
-                            CSS (SCSS)
-                        </li class="list_item">
-                        <li>
-                            JavaScript
-                        </li class="list_item">
-                        <li>
-                            Svelte & SvelteKit
-                        </li class="list_item">
-                        <li>
-                            React
-                        </li class="list_item">
-                        <li class="list_item">
-                            Python
-                        </li>
-                        <li class="list_item">
-                            Selenium
-                        </li>
-                    </ul>
-                </section>
-                <p class="text">
-                    Смешной ролик (нажмите на картинку, чтобы перейти на Youtube)
-                </p>
-                <a 
-                    class="link"
-                    href="https://www.youtube.com/watch?v=fOSWy8Gwma8"
-                >
-                    <img
-                        class="image"
-                        src="static/soundwave_thumbnail.png"
-                        alt="An image of Soundwave with the caption &quot;Hatsune Miku&quot; in Impact font. Click on it to watch a funny video."
-                        width="350px"
-                    >
-                </a>
+
+                <!-- Flex-контейнер для расположения двух секций в отдельной колонке -->
+                <div class="flex-row">
+                    <!-- Секция "Мой стек" -->
+                    <section class="stack">
+                        <div
+                            class="header-container"
+                        >
+                            <h2
+                                class="heading heading_hierarchy_2"
+                            >
+                                Мой стек
+                            </h2>
+                        </div>
+                        <div
+                            class="icons-container"
+                        >
+                            <div class="icons-group">
+                                <img
+                                    class="icons-group__icon"
+                                    src="static/icons/html_icon.png"
+                                    alt=""
+                                >
+                                <img
+                                    class="icons-group__icon"
+                                    src="static/icons/css_icon.png"
+                                    alt=""
+                                >
+                                <img
+                                    class="icons-group__icon"
+                                    src="static/icons/js_icon.png"
+                                    alt=""
+                                >
+                                <img
+                                    class="icons-group__icon"
+                                    src="static/icons/python_icon.png"
+                                    alt=""
+                                >
+                                <img
+                                class="icons-group__icon"
+                                src="static/icons/svelte_icon.png"
+                                alt=""
+                                >
+                                <img
+                                    class="icons-group__icon"
+                                    src="static/icons/react_icon.png"
+                                    alt=""
+                                >
+                            </div>
+                            <img
+                                class="icons-container__icon"
+                                src="static/icons/selenium_icon.png"
+                                alt=""
+                            >
+                        </div>
+                    </section>
+
+                    <!-- Секция "Мои достижения" -->
+                    <section class="achievements">
+                        <div
+                            class="header-container"
+                        >
+                            <h2
+                                class="heading heading_hierarchy_2"
+                            >
+                                Мои достижения
+                            </h2>
+                        </div>
+                        <div
+                            class="image-container"
+                        >
+                            <img
+                                class="image-container__image"
+                                src="static/images/vtb_api_certificate.png"
+                                alt=""
+                            >
+                            <img
+                                class="image-container__image"
+                                src="static/images/vk_edu_certificate.png"
+                                alt=""
+                            >
+                        </div>
+                    </section>
+                </div>
             </main>
-            <hr>
-            <footer>
-                <h2 class="heading heading__h2">
+            <footer class="footer">
+                <h2 class="heading heading_hierarchy_2">
                     Мои контакты
                 </h2>
-                <ul class="list list_contacts">
-                    <li class="list_item">
-                        <a
-                            class="link"
-                            href="https://vk.com/id263061135">
-                            VK
-                        </a>
-                    </li>
-                    <li class="list_item">
-                        <a
-                            class="link"
-                            href="https://t.me/Ilya_Matveyenko">
-                            Telegram
-                        </a>
-                    </li>
-                </ul>
+
             </footer>
         </div>
     </body>

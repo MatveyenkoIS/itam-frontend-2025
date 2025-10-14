@@ -1,0 +1,68 @@
+/* Подключение шрифтов */
+
+/* Декоративные шрифты */
+@font-face {
+    font-family: "Jupiter Pro Bold";
+    src: local("Jupiter Pro Bold"),
+        local("Jupiter-Pro-Bold"),
+        url("./JupiterPro-Bold/JupiterPro-Bold.woff2") format("woff2"),
+        url("./JupiterPro-Bold/JupiterPro-Bold.woff") format("woff"),
+        url("./JupiterPro-Bold/JupiterPro-Bold.ttf") format("truetype");
+}
+@font-face {
+    font-family: "OPTI Enge Etienne";
+    src: local("OPTI Enge Etienne"),
+        local("OPTI-Enge-Etienne"),
+        url("./OPTIEngeEtienne/OPTIEngeEtienne.woff2") format("woff2"),
+        url("./OPTIEngeEtienne/OPTIEngeEtienne.woff") format("woff"),
+        url("./OPTIEngeEtienne/OPTIEngeEtienne.ttf") format("truetype");
+}
+
+/* Шрифт заголовков */
+@font-face {
+    font-family: "Noto Serif Bold";
+    src: local("Noto Serif Bold"),
+        local("Noto-Serif-Bold"),
+        url("./NotoSerif-Bold/NotoSerif-Bold.woff2") format("woff2"),
+        url("./NotoSerif-Bold/NotoSerif-Bold.woff") format("woff"),
+        url("./NotoSerif-Bold/NotoSerif-Bold.ttf") format("truetype");
+}
+
+/* Основные шрифты */
+@font-face {
+    font-family: "Noto Sans";
+    src: local("Noto Sans Regular"),
+        local("NotoSans-Regular"),
+        url("./NotoSans-Regular/NotoSans.woff2") format("woff2"),
+        url("./NotoSans-Regular/NotoSans.woff") format("woff"),
+        url("./NotoSans-Regular/NotoSans.ttf") format("truetype");
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Noto Sans";
+    src: local("Noto Sans Bold"),
+        local("Noto-Sans-Bold"),
+        url("./NotoSans-Bold/NotoSans-Bold.woff2") format("woff2"),
+        url("./NotoSans-Bold/NotoSans-Bold.woff") format("woff"),
+        url("./NotoSans-Bold/NotoSans-Bold.ttf") format("truetype");
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Noto Sans";
+    src: local("Noto Sans Italic"),
+        local("Noto-Sans-Italic"),
+        url("./NotoSans-Italic/NotoSans-Italic.woff2") format("woff2"),
+        url("./NotoSans-Italic/NotoSans-Italic.woff") format("woff"),
+        url("./NotoSans-Italic/NotoSans-Italic.ttf") format("truetype");
+    font-style: italic;
+}
+@font-face {
+    font-family: "Noto Sans";
+    src: local("Noto Sans Bold Italic"),
+        local("Noto-Sans-Bold-Italic"),
+        url("./NotoSans-BoldItalic/NotoSans-BoldItalic.woff2") format("woff2"),
+        url("./NotoSans-BoldItalic/NotoSans-BoldItalic.woff") format("woff"),
+        url("./NotoSans-BoldItalic/NotoSans-BoldItalic.ttf") format("truetype");
+    font-weight: bold;
+    font-style: italic;
+}
