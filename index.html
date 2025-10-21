@@ -12,40 +12,50 @@
                 <h1
                     class="heading heading_hierarchy_1"
                 >
-                    ILYA MATVEYENKO
+                    ILYA MATVEYENKO PERSONAL SITE
                 </h1>
             </header>
             <main class="main">
-                <!-- Секция "Обо мне" -->
-                <section class="about">
-                    <div class="header-container">
-                        <h2
-                            class="heading heading_hierarchy_2"
-                        >
-                            Обо мне
-                        </h2>
+                <div class="greeting">
+                    <!-- Фотография -->
+                    <img
+                        class="image"
+                        src="static/images/photo_vtb.png"
+                        alt=""
+                    >
+                    <div class="greeting-container">
+                        <span class="greeting-container__text">Привет, меня зовут Илья.&#160;</span>
+                        <span class="greeting-container__text">Добро пожаловать на мой веб-сайт!</span>
                     </div>
-                    <div class="content-container">
-                        <img
-                            class="content-container_image"
-                            src="static/images/photo_vtb.png"
-                            alt="Ilya Matveenko's photo portrait"
-                        >
+                </div>
+
+                <div class="flex-container">
+                    <!-- Секция "Обо мне" -->
+                    <section class="about">
+                        <div class="header-container">
+                            <h2
+                                class="heading heading_hierarchy_2"
+                            >
+                                Обо мне
+                            </h2>
+                        </div>
                         <div
-                            class="text-container"
+                            class="content-container content-container_about"
                         >
-                            <p class="text">
-                                Привет, меня зовут Илья Матвеенко. Я студент 4 курса на треке "Разработка мобильных и веб-приложений". Возможно, некоторые преподаватели меня уже помнят, так как в ITAM Frontend Courses я участвую уже в третий раз.  
+                            <p class="content-container__paragraph">
+                                Я студент 4 курса и обучаюсь на треке "Разработка мобильных и веб-приложений".  
                             </p>
-                            <p class="text">
+                            <p class="content-container__paragraph">
+                                Возможно, некоторые преподаватели меня уже хорошо знают, так как в ITAM Frontend Courses я участвую уже в 3 раз.
+                            </p>
+                            <p class="content-container__paragraph">
                                 Почему же я снова здесь? Что ж, к хакатону я начал изучать совсем новую для себя библиотеку - React, и решил, что новая итерация курсов по фронтенд-разработке хорошо поддержит меня в освоении этой технологии.
                             </p>
                         </div>
-                    </div>
-                </section>
+                    </section>
+                </div>
 
-                <!-- Flex-контейнер для расположения двух секций в отдельной колонке -->
-                <div class="flex-row">
+                <div class="flex-container">
                     <!-- Секция "Мой стек" -->
                     <section class="stack">
                         <div
@@ -58,42 +68,46 @@
                             </h2>
                         </div>
                         <div
-                            class="icons-container"
+                            class="content-container content-container_stack"
                         >
                             <div class="icons-group">
-                                <img
-                                    class="icons-group__icon"
-                                    src="static/icons/html_icon.png"
-                                    alt=""
-                                >
-                                <img
-                                    class="icons-group__icon"
-                                    src="static/icons/css_icon.png"
-                                    alt=""
-                                >
-                                <img
-                                    class="icons-group__icon"
-                                    src="static/icons/js_icon.png"
-                                    alt=""
-                                >
-                                <img
-                                    class="icons-group__icon"
-                                    src="static/icons/python_icon.png"
-                                    alt=""
-                                >
-                                <img
-                                class="icons-group__icon"
-                                src="static/icons/svelte_icon.png"
-                                alt=""
-                                >
-                                <img
-                                    class="icons-group__icon"
-                                    src="static/icons/react_icon.png"
-                                    alt=""
-                                >
+                                <div class="icons-group__row">
+                                    <img
+                                        class="icons-group__icon"
+                                        src="static/icons/html_icon.png"
+                                        alt=""
+                                    >
+                                    <img
+                                        class="icons-group__icon"
+                                        src="static/icons/css_icon.png"
+                                        alt=""
+                                    >
+                                    <img
+                                        class="icons-group__icon"
+                                        src="static/icons/js_icon.png"
+                                        alt=""
+                                    >
+                                </div>
+                                <div class="icons-group__row">
+                                    <img
+                                        class="icons-group__icon"
+                                        src="static/icons/python_icon.png"
+                                        alt=""
+                                    >
+                                    <img
+                                        class="icons-group__icon"
+                                        src="static/icons/svelte_icon.png"
+                                        alt=""
+                                    >
+                                    <img
+                                        class="icons-group__icon"
+                                        src="static/icons/react_icon.png"
+                                        alt=""
+                                    >
+                                </div>
                             </div>
                             <img
-                                class="icons-container__icon"
+                                class="content-container__icon"
                                 src="static/icons/selenium_icon.png"
                                 alt=""
                             >
@@ -112,15 +126,15 @@
                             </h2>
                         </div>
                         <div
-                            class="image-container"
+                            class="content-container content-container_achievements"
                         >
                             <img
-                                class="image-container__image"
+                                class="content-container__image content-container__image_vtb-api"
                                 src="static/images/vtb_api_certificate.png"
                                 alt=""
                             >
                             <img
-                                class="image-container__image"
+                                class="content-container__image content-container__image_vk-edu"
                                 src="static/images/vk_edu_certificate.png"
                                 alt=""
                             >

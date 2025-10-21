@@ -2,13 +2,24 @@
 
 /* Декоративные шрифты */
 @font-face {
-    font-family: "Jupiter Pro Bold";
+    font-family: "Jupiter Pro";
+    src: local("Jupiter Pro Regular"),
+        local("Jupiter-Pro-Regular"),
+        url("./JupiterPro-Regular/JupiterPro-Regular.woff2") format("woff2"),
+        url("./JupiterPro-Regular/JupiterPro-Regular.woff") format("woff"),
+        url("./JupiterPro-Regular/JupiterPro-Regular.ttf") format("truetype");
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Jupiter Pro";
     src: local("Jupiter Pro Bold"),
         local("Jupiter-Pro-Bold"),
         url("./JupiterPro-Bold/JupiterPro-Bold.woff2") format("woff2"),
         url("./JupiterPro-Bold/JupiterPro-Bold.woff") format("woff"),
         url("./JupiterPro-Bold/JupiterPro-Bold.ttf") format("truetype");
+    font-weight: bold;
 }
+
 @font-face {
     font-family: "OPTI Enge Etienne";
     src: local("OPTI Enge Etienne"),
