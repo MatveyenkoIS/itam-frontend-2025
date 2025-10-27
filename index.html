@@ -16,48 +16,46 @@
                 </h1>
             </header>
             <main class="main">
-                <div class="greeting">
-                    <!-- Фотография -->
+                <!-- Приветственное сообщение -->
+                <div class="flex-row flex-row_greeting">
                     <img
-                        class="image"
+                        class="portrait-photo"
                         src="static/images/photo_vtb.png"
                         alt=""
                     >
-                    <div class="greeting-container">
-                        <span class="greeting-container__text">Привет, меня зовут Илья.&#160;</span>
-                        <span class="greeting-container__text">Добро пожаловать на мой веб-сайт!</span>
+                    <div class="content-container content-container_greeting">
+                        <span class="content-container__greeting-text">Привет, меня зовут Илья.&#160;</span>
+                        <span class="content-container__greeting-text">Добро пожаловать на мой веб-сайт!</span>
                     </div>
                 </div>
 
-                <div class="flex-container">
-                    <!-- Секция "Обо мне" -->
-                    <section class="about">
-                        <div class="header-container">
-                            <h2
-                                class="heading heading_hierarchy_2"
-                            >
-                                Обо мне
-                            </h2>
-                        </div>
-                        <div
-                            class="content-container content-container_about"
+                <!-- Секция "Обо мне" -->
+                <section class="section section_about">
+                    <div class="header-container">
+                        <h2
+                            class="heading heading_hierarchy_2"
                         >
-                            <p class="content-container__paragraph">
-                                Я студент 4 курса и обучаюсь на треке "Разработка мобильных и веб-приложений".  
-                            </p>
-                            <p class="content-container__paragraph">
-                                Возможно, некоторые преподаватели меня уже хорошо знают, так как в ITAM Frontend Courses я участвую уже в 3 раз.
-                            </p>
-                            <p class="content-container__paragraph">
-                                Почему же я снова здесь? Что ж, к хакатону я начал изучать совсем новую для себя библиотеку - React, и решил, что новая итерация курсов по фронтенд-разработке хорошо поддержит меня в освоении этой технологии.
-                            </p>
-                        </div>
-                    </section>
-                </div>
+                            Обо мне
+                        </h2>
+                    </div>
+                    <div
+                        class="content-container content-container_bordered content-container_about"
+                    >
+                        <p class="content-container__paragraph">
+                            Я студент 4 курса и обучаюсь на треке "Разработка мобильных и веб-приложений".  
+                        </p>
+                        <p class="content-container__paragraph">
+                            Возможно, некоторые преподаватели меня уже хорошо знают, так как в ITAM Frontend Courses я участвую уже в 3 раз.
+                        </p>
+                        <p class="content-container__paragraph">
+                            Почему же я снова здесь? Что ж, к хакатону я начал изучать совсем новую для себя библиотеку - React, и решил, что новая итерация курсов по фронтенд-разработке хорошо поддержит меня в освоении этой технологии.
+                        </p>
+                    </div>
+                </section>
 
-                <div class="flex-container">
+                <div class="flex-row flex-row_skills">
                     <!-- Секция "Мой стек" -->
-                    <section class="stack">
+                    <section class="section section_stack">
                         <div
                             class="header-container"
                         >
@@ -68,7 +66,7 @@
                             </h2>
                         </div>
                         <div
-                            class="content-container content-container_stack"
+                            class="content-container content-container_bordered content-container_stack"
                         >
                             <div class="icons-group">
                                 <div class="icons-group__row">
@@ -115,7 +113,7 @@
                     </section>
 
                     <!-- Секция "Мои достижения" -->
-                    <section class="achievements">
+                    <section class="section section_achievements">
                         <div
                             class="header-container"
                         >
@@ -126,7 +124,7 @@
                             </h2>
                         </div>
                         <div
-                            class="content-container content-container_achievements"
+                            class="content-container content-container_bordered content-container_achievements"
                         >
                             <img
                                 class="content-container__image content-container__image_vtb-api"
@@ -143,10 +141,88 @@
                 </div>
             </main>
             <footer class="footer">
-                <h2 class="heading heading_hierarchy_2">
-                    Мои контакты
-                </h2>
+                <div class="flex-row flex-row_footer flex-row_links">
+                    <!-- Секция "Мои контакты" -->
+                    <section class="section section_links">
+                        <h2 class="heading heading_hierarchy_2">
+                            Мои контакты
+                        </h2>
+                        <div class="content-container content-container_links">
+                            <a
+                                class="content-container__link"
+                                href="https://t.me/Ilya_Matveyenko"
+                                target="_blank"
+                            >
+                                <img
+                                    class="content-container__link-icon"
+                                    src="static/icons/telegram_icon.png"
+                                    alt=""
+                                >
+                                Телеграм
+                            </a>
+                            <a
+                                class="content-container__link"
+                                href="https://vk.com/id263061135"
+                                target="_blank"
+                            >
+                                <img
+                                    class="content-container__link-icon"
+                                    src="static/icons/vk_icon.png"
+                                    alt=""
+                                >
+                                Вконтакте
+                            </a>
+                            <a
+                                class="content-container__link"
+                                href="https://github.com/MatveyenkoIS"
+                                target="_blank"
+                            >
+                                <img
+                                class="content-container__link-icon"
+                                src="static/icons/github_icon.png"
+                                alt=""
+                                >
+                                GitHub
+                            </a>
+                        </div>
+                    </section>
+                
+                    <!-- Секция "Шрифты" -->
+                    <section class="section section_links">
+                        <h2 class="heading heading_hierarchy_2">
+                            Использованные шрифты
+                        </h2>
+                        <div class="content-container content-container_links">
+                            <a
+                                class="content-container__link content-container__link_OPTI-Enge-Etienne"
+                                href="https://www.fontbolt.com/font/final-fantasy-xiv-font/"
+                                target="_blank"
+                            >
+                                OPTI Enge Etienne
+                            </a>
+                            <a
+                                class="content-container__link content-container__link_Noto-Serif"
+                                href="https://en.bestfonts.pro/font/noto-serif"
+                                target="_blank"
+                            >
+                                Noto Serif
+                            </a>
+                            <a
+                                class="content-container__link content-container__link_Noto-Sans"
+                                href="https://en.bestfonts.pro/font/noto-sans"
+                                target="_blank"
+                            >
+                                Noto Sans
+                            </a>
+                        </div>
+                    </section>
+                </div>
 
+                <!-- Правовая информация -->
+                <div class="flex-row flex-row_footer flex-row_legal-info">
+                    <span class="notice">Все права на шрифты, размещённые на сайте, принадлежат их настоящим владельцам.&#160;</span>
+                    <span class="copyright">&#169; 2025 Илья Матвеенко</span>
+                </div>
             </footer>
         </div>
     </body>
