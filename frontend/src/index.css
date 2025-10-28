@@ -1,0 +1,336 @@
+/* Свойства корневого элемента */
+:root {
+    background-color: white;
+    color: black;
+
+    font-family: "Noto Sans";
+    font-weight: normal;
+}
+
+/* Обёртка страницы */
+#app {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* Заголовки */
+.heading_hierarchy_1 {
+    /* Модификатор для 1-го по иерархии заголовка*/
+
+    font-family: "OPTI Enge Etienne";
+    font-size: 50px;
+    letter-spacing: 1px;
+}
+.heading_hierarchy_2 {
+    /* Модификатор для 2-го по иерархии заголовка*/
+
+    font-family: "Noto Serif Bold";
+    font-size: 20px;
+}
+
+/* Основные части страницы */
+.header {
+    padding-top: 6px;
+    padding-bottom: 6px;
+
+    border-bottom: 2px solid black;
+
+    text-align: center;
+}
+.main {
+    padding: 12px;
+
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+}
+.footer {
+    border-top: 2px solid black;
+
+    padding-top: 6px;
+    padding-right: 12px;
+    padding-bottom: 8px;
+    padding-left: 12px;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+}
+
+/* Флекс-контейнер (строка) для расположения элементов на одной оси */
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+/* Модификаторы флекс-строк */
+.flex-row_greeting {
+    /* Для расположения фотографии и приветственного сообщения */
+
+    align-items: center;
+}
+.flex-row_skills {
+    /* Для расположения секций "Мой стек" и "Мои достижения" */
+
+    align-items: start;
+
+    gap: 12px;
+}
+.flex-row_footer {
+    /* Для расположения флекс-строк в подвале сайта */
+
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
+
+    row-gap: 12px;
+}
+.flex-row_links {
+    /* Для флекс-строки с ссылками */
+
+    column-gap: 54px;
+}
+.flex-row_legal-info {
+    /* Для флекс-строки с правовой информацией */
+
+    column-gap: 185px;
+}
+
+/* Фотография-портрет */
+.portrait-photo {
+    box-sizing: border-box;
+
+    width: 169px;
+
+    border: 2px solid black;
+}
+
+/* Секции */
+.section {
+    height: fit-content;
+
+    display: flex;
+}
+/* Модификаторы секций */
+.section_about {
+    /* Для секции "Обо мне" */
+    width: 100%;
+
+    flex-direction: column;
+}
+.section_stack {
+    /* Для секции "Мой стек" */
+
+    width: calc(53.64% - 6px);
+
+    flex-direction: column;
+}
+.section_achievements {
+    /* Для секции "Мои достижения" */
+
+    width: calc(46.36% - 6px);
+
+    flex-direction: column;
+}
+.section_links {
+    /* Для секций с ссылками ("Мои контакты" и "Шрифты") */
+
+    flex-direction: row;
+
+    column-gap: 27px;
+}
+
+/* Шапки секций */
+.header-container {
+    box-sizing: border-box;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+    border: 2px solid black;
+
+    text-align: center;
+}
+
+/* Контейнеры с содержимым */
+.content-container {
+    box-sizing: border-box;
+
+    height: fit-content;
+
+    display: flex;
+}
+/* Модификаторы контейнеров */
+.content-container_bordered {
+    /* Для задания рамок */
+
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+}
+.content-container_greeting {
+    /* Для контейнера с приветственным сообщением */
+    flex-grow: 1;
+
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.content-container_about {
+    /* Для контейнера в секции "Обо мне" */
+
+    flex-direction: column;
+
+    padding-top: 9px;
+    padding-right: 9px;
+    padding-bottom: 12px;
+    padding-left: 9px;
+
+    text-align: justify;
+
+    row-gap: 9px;
+}
+.content-container_stack {
+    /* Для контейнера в секции "Мой стек" */
+
+    flex-direction: row;
+}
+.content-container_achievements {
+    /* Для контейнера в секции "Мои достижения" */
+
+    flex-direction: row;
+
+    padding-top: 1.55%;
+    padding-right: 2.45%;
+    padding-bottom: 1.45%;
+    padding-left: 2.45%;
+
+    justify-content: space-between;
+}
+.content-container_links {
+    /* Для контейнеров в секциях с ссылками */
+
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+
+    column-gap: 27px;
+}
+/* Элементы контейнеров */
+.content-container__greeting-text {
+    /* Строка с приветственным сообщением */
+
+    font-family: "Noto Serif Bold";
+    font-size: 36px;
+    line-height: normal;
+    text-align: center;
+}
+.content-container__paragraph {
+    /* Параграфы из секции "Обо мне" */
+
+    font-size: 18px;
+    line-height: normal;
+}
+.content-container__icon {
+    /* Большая иконка из секции "Мой стек" */
+
+    width: 40%;
+}
+.content-container__image {
+    /* Картинки с сертификатами из раздела "Мои достижения" */
+
+    height: 100%;
+}
+.content-container__image_vtb-api {
+    /* Модификатор картинки для сертификата за VTB API Hackathon 2024 */
+
+    width: 32.3%;
+}
+.content-container__image_vk-edu {
+    /* Модификатор картинки для сертификата за VK Education Practice */
+
+    width: 64.5%;
+}
+.content-container__link {
+    /* Ссылка */
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    column-gap: 6px;
+
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+.content-container__link-icon {
+    /* Иконка в ссылке */
+
+    width: 20px;
+}
+.content-container__link:hover {
+    /* Ссылка подчёркивается при наведении */
+
+    text-decoration: underline;
+}
+.content-container__link_OPTI-Enge-Etienne {
+    /* Модификатор ссылки на шрифт "OPTI Enge Etienne" */
+
+    font-family: "OPTI Enge Etienne";
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+.content-container__link_Noto-Serif {
+    /* Модификатор ссылки на шрифт "Noto Serif" */
+
+    font-family: "Noto Serif Bold";
+}
+.content-container__link_Noto-Sans {
+    /* Модификатор ссылки на шрифт "Noto Sans" */
+
+    font-family: "Noto Sans";
+    font-weight: normal;
+}
+
+/* Группа маленьких иконок */
+.icons-group {
+    width: 60%;
+    aspect-ratio: 3/2;
+
+    display: flex;
+    flex-direction: column;
+}
+/* Элементы группы */
+.icons-group__row {
+    /* Флекс-строка с 3 иконками */
+
+    width: 100%;
+    height: 50%;
+
+    display: flex;
+    flex-direction: row;
+}
+.icons-group__icon {
+    /* Сама иконка*/
+
+    height: 100%;
+}
+
+/* Раздел с правовой информацией */
+.copyright {
+    /* Копирайт */
+
+    font-family: "Noto Serif Bold";
+    font-size: 20px;
+}
+.notice {
+    /* Предупреждение о правообладателях шрифтов */
+
+    font-family: "Noto Sans";
+    font-style: italic;
+    font-size: 20px;
+}
