@@ -1,3 +1,6 @@
+@import "/fonts/fonts.css";
+@import "reset-css/reset.css";
+
 /* Свойства корневого элемента */
 :root {
     background-color: white;
@@ -32,12 +35,13 @@
 
 /* Основные части страницы */
 .header {
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding: 6px 12px;
 
     border-bottom: 2px solid black;
 
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .main {
     padding: 12px;
@@ -59,6 +63,33 @@
     display: flex;
     flex-direction: column;
     row-gap: 12px;
+}
+
+/* Навигационная панель */
+.navbar__links-list {
+    /* Список со ссылками для навигации*/
+
+    display: flex;
+    flex-direction: row;
+    column-gap: 27px;
+}
+.navbar__link {
+    /* Ссылка из списка */
+
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+.navbar__link_active {
+    /* Модификатор для активной ссылки */
+
+    text-decoration: underline;
+}
+.navbar__link:hover {
+    /* Ссылка подчёркивается при наведении */
+
+    text-decoration: underline;
 }
 
 /* Флекс-контейнер (строка) для расположения элементов на одной оси */
@@ -83,7 +114,7 @@
     /* Для расположения флекс-строк в подвале сайта */
 
     justify-content: center;
-    align-items: start;
+    align-items: baseline;
     flex-wrap: wrap;
 
     row-gap: 12px;
@@ -224,7 +255,6 @@
 
     font-family: "Noto Serif Bold";
     font-size: 36px;
-    line-height: normal;
     text-align: center;
 }
 .content-container__paragraph {
