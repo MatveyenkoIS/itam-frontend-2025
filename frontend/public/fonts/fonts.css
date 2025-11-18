@@ -5,18 +5,18 @@
     font-family: "Jupiter Pro";
     src: local("Jupiter Pro Regular"),
         local("Jupiter-Pro-Regular"),
-        url("./JupiterPro-Regular/JupiterPro-Regular.woff2") format("woff2"),
-        url("./JupiterPro-Regular/JupiterPro-Regular.woff") format("woff"),
-        url("./JupiterPro-Regular/JupiterPro-Regular.ttf") format("truetype");
+        url("/fonts/JupiterPro-Regular/JupiterPro-Regular.woff2") format("woff2"),
+        url("/fonts/JupiterPro-Regular/JupiterPro-Regular.woff") format("woff"),
+        url("/fonts/JupiterPro-Regular/JupiterPro-Regular.ttf") format("truetype");
     font-weight: normal;
 }
 @font-face {
     font-family: "Jupiter Pro";
     src: local("Jupiter Pro Bold"),
         local("Jupiter-Pro-Bold"),
-        url("./JupiterPro-Bold/JupiterPro-Bold.woff2") format("woff2"),
-        url("./JupiterPro-Bold/JupiterPro-Bold.woff") format("woff"),
-        url("./JupiterPro-Bold/JupiterPro-Bold.ttf") format("truetype");
+        url("/fonts/JupiterPro-Bold/JupiterPro-Bold.woff2") format("woff2"),
+        url("/fonts/JupiterPro-Bold/JupiterPro-Bold.woff") format("woff"),
+        url("/fonts/JupiterPro-Bold/JupiterPro-Bold.ttf") format("truetype");
     font-weight: bold;
 }
 
@@ -24,9 +24,9 @@
     font-family: "OPTI Enge Etienne";
     src: local("OPTI Enge Etienne"),
         local("OPTI-Enge-Etienne"),
-        url("./OPTIEngeEtienne/OPTIEngeEtienne.woff2") format("woff2"),
-        url("./OPTIEngeEtienne/OPTIEngeEtienne.woff") format("woff"),
-        url("./OPTIEngeEtienne/OPTIEngeEtienne.ttf") format("truetype");
+        url("/fonts/OPTIEngeEtienne/OPTIEngeEtienne.woff2") format("woff2"),
+        url("/fonts/OPTIEngeEtienne/OPTIEngeEtienne.woff") format("woff"),
+        url("/fonts/OPTIEngeEtienne/OPTIEngeEtienne.ttf") format("truetype");
 }
 
 /* Шрифт заголовков */
@@ -34,9 +34,9 @@
     font-family: "Noto Serif Bold";
     src: local("Noto Serif Bold"),
         local("Noto-Serif-Bold"),
-        url("./NotoSerif-Bold/NotoSerif-Bold.woff2") format("woff2"),
-        url("./NotoSerif-Bold/NotoSerif-Bold.woff") format("woff"),
-        url("./NotoSerif-Bold/NotoSerif-Bold.ttf") format("truetype");
+        url("/fonts/NotoSerif-Bold/NotoSerif-Bold.woff2") format("woff2"),
+        url("/fonts/NotoSerif-Bold/NotoSerif-Bold.woff") format("woff"),
+        url("/fonts/NotoSerif-Bold/NotoSerif-Bold.ttf") format("truetype");
 }
 
 /* Основные шрифты */
@@ -44,36 +44,36 @@
     font-family: "Noto Sans";
     src: local("Noto Sans Regular"),
         local("NotoSans-Regular"),
-        url("./NotoSans-Regular/NotoSans.woff2") format("woff2"),
-        url("./NotoSans-Regular/NotoSans.woff") format("woff"),
-        url("./NotoSans-Regular/NotoSans.ttf") format("truetype");
+        url("/fonts/NotoSans-Regular/NotoSans.woff2") format("woff2"),
+        url("/fonts/NotoSans-Regular/NotoSans.woff") format("woff"),
+        url("/fonts/NotoSans-Regular/NotoSans.ttf") format("truetype");
     font-weight: normal;
 }
 @font-face {
     font-family: "Noto Sans";
     src: local("Noto Sans Bold"),
         local("Noto-Sans-Bold"),
-        url("./NotoSans-Bold/NotoSans-Bold.woff2") format("woff2"),
-        url("./NotoSans-Bold/NotoSans-Bold.woff") format("woff"),
-        url("./NotoSans-Bold/NotoSans-Bold.ttf") format("truetype");
+        url("/fonts/NotoSans-Bold/NotoSans-Bold.woff2") format("woff2"),
+        url("/fonts/NotoSans-Bold/NotoSans-Bold.woff") format("woff"),
+        url("/fonts/NotoSans-Bold/NotoSans-Bold.ttf") format("truetype");
     font-weight: bold;
 }
 @font-face {
     font-family: "Noto Sans";
     src: local("Noto Sans Italic"),
         local("Noto-Sans-Italic"),
-        url("./NotoSans-Italic/NotoSans-Italic.woff2") format("woff2"),
-        url("./NotoSans-Italic/NotoSans-Italic.woff") format("woff"),
-        url("./NotoSans-Italic/NotoSans-Italic.ttf") format("truetype");
+        url("/fonts/NotoSans-Italic/NotoSans-Italic.woff2") format("woff2"),
+        url("/fonts/NotoSans-Italic/NotoSans-Italic.woff") format("woff"),
+        url("/fonts/NotoSans-Italic/NotoSans-Italic.ttf") format("truetype");
     font-style: italic;
 }
 @font-face {
     font-family: "Noto Sans";
     src: local("Noto Sans Bold Italic"),
         local("Noto-Sans-Bold-Italic"),
-        url("./NotoSans-BoldItalic/NotoSans-BoldItalic.woff2") format("woff2"),
-        url("./NotoSans-BoldItalic/NotoSans-BoldItalic.woff") format("woff"),
-        url("./NotoSans-BoldItalic/NotoSans-BoldItalic.ttf") format("truetype");
+        url("/fonts/NotoSans-BoldItalic/NotoSans-BoldItalic.woff2") format("woff2"),
+        url("/fonts/NotoSans-BoldItalic/NotoSans-BoldItalic.woff") format("woff"),
+        url("/fonts/NotoSans-BoldItalic/NotoSans-BoldItalic.ttf") format("truetype");
     font-weight: bold;
     font-style: italic;
 }

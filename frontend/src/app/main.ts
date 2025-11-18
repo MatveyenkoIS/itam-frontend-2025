@@ -1,26 +1,33 @@
+// Подключение шрифтов и стилей главной страницы
+import "./main.css";
+
+// Подключение иконок
 import iconTelegram from "/icons/telegram_icon.png";
 import iconVK from "/icons/vk_icon.png";
 import iconGitHub from "/icons/github_icon.png";
 
-export default `
+// Подключение роутера
+import './router.ts';
+
+document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
     <header class="header">
         <h1
             class="heading heading_hierarchy_1"
         >
             ILYA MATVEYENKO PERSONAL SITE
         </h1>
-        <nav class="navbar">
-            <ul class="navbar__links-list">
-                <li class="navbar__list-item">
-                    <a class="navbar__link" href="/">Главная</a>
+        <nav class="nav-bar">
+            <ul class="nav-bar__links-list">
+                <li class="nav-bar__list-item">
+                    <a class="nav-bar__link" href="/">Главная</a>
                 </li>
-                <li class="navbar__list-item">
-                    <a class="navbar__link" href="/blog">Блог</a>
+                <li class="nav-bar__list-item">
+                    <a class="nav-bar__link" href="/blog">Блог</a>
                 </li>
             </ul>
         </nav>
     </header>
-    <main id="root" class="main"></main>
+    <main id="main" class="main"></main>
     <footer class="footer">
         <div class="flex-row flex-row_footer flex-row_links">
             <section class="section section_links">

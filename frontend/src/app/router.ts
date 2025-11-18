@@ -1,5 +1,5 @@
-import Home from "./pages/Home";
-import Blog from "./pages/Blog";
+import HomePage from "../pages/HomePage/HomePage";
+import BlogPage from "../pages/BlogPage/BlogPage";
 
 interface Route {
     path: string;
@@ -9,18 +9,18 @@ interface Route {
 const routes: Route[] = [
     {
         path: "/",
-        data: Home
+        data: HomePage
     },
     {
         path: "/blog",
-        data: Blog
+        data: BlogPage
     }
 ];
 
 const setRouteHtml = () => {
-    const root: HTMLElement | null = document.getElementById("root");
+    const main: HTMLElement | null = document.getElementById("main");
 
-    if (!root) return;
+    if (!main) return;
 
     const route: Route | undefined = routes.find(route => route.path == window.location.pathname);
 
@@ -28,15 +28,15 @@ const setRouteHtml = () => {
 
     const html: string = route.data;
 
-    root.innerHTML = html;
+    main.innerHTML = html;
 };
 
-const setNavLinkColor = () => {
-    document.querySelectorAll<HTMLAnchorElement>(".navbar__link").forEach(link => {
+const setNavLinkStyles = () => {
+    document.querySelectorAll<HTMLAnchorElement>(".nav-bar__link").forEach(link => {
         if (link.href === window.location.href) {
-            link.classList.add('navbar__link_active');
+            link.classList.add("nav-bar__link_active");
         } else {
-            link.classList.remove('navbar__link_active');
+            link.classList.remove("nav-bar__link_active");
         }
     })
 };
@@ -52,18 +52,18 @@ const router = (mouseEvent: MouseEvent) => {
 
     history.pushState({}, "newUrl", target.href);
     setRouteHtml();
-    setNavLinkColor();
+    setNavLinkStyles();
 };
 
 const setEventListeners = () => {
-    window.addEventListener('popstate', setRouteHtml);
+    window.addEventListener("popstate", setRouteHtml);
 
-    window.addEventListener('DOMContentLoaded', () => {
+    window.addEventListener("DOMContentLoaded", () => {
         setRouteHtml();
-        setNavLinkColor();
+        setNavLinkStyles();
     });
 
-    document.querySelectorAll<HTMLAnchorElement>(".navbar__link").forEach(link => {
+    document.querySelectorAll<HTMLAnchorElement>(".nav-bar__link").forEach(link => {
         link.addEventListener("click", router);
     });
 };
